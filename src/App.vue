@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <div class="page" >
+      <nav >
+        <nav-b-ar/>
+      </nav>
+    <div class="small-con">
+      <home-view/>
+     </div>
+     <div class="scrollll">
+      <sc-rool/>
+      
+      
+     </div>
+     <div>
+      <forms-trip/>
+     </div>
+     </div>
+
+     
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeView from './components/HomeView.vue'
+//import TourPackage from './components/TourPackage.vue'
+import NavBAr from './components/NavBAr.vue'
+import ScRool from './components/ScRool.vue'
+import FormsTrip from'./components/FormsTrip.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeView,
+    NavBAr,
+    ScRool,
+    FormsTrip,
+    
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: deepskyblue;
+  justify-items:auto;
 }
+
 </style>
