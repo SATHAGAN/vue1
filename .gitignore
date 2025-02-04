@@ -15,7 +15,8 @@ pnpm-debug.log*
 
 # Editor directories and files
 .idea
-.vscode
+.vscodegit remote set-url origin https://github.com/SATHAGAN/VUE.git
+
 *.suo
 *.ntvs*
 *.njsproj
