@@ -1,17 +1,20 @@
 <template>
   <div class="navbar">
-    <a href="#">Home</a>
-    <a href="">Tour Package</a>
+    
+    <router-link to="/">Home</router-link>
+    <router-link to="/tourpack">TourPackage</router-link>
     <a href="">Gallery</a>
     <a href="">about</a>
     <a href="">Contact Us</a>
-
+   
   </div>
+  
+
 </template>
-<style scoped>
+<style >
    .navbar{
     padding-top: 20px;
-   background:deepskyblue;
+    background:deepskyblue;
     position: fixed;
     display: flex;
     width:100%;
@@ -36,3 +39,4 @@
    }
 
 </style>
+

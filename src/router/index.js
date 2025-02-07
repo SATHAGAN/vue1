@@ -1,16 +1,19 @@
-// import { createRouter, createWebHistory } from "vue-router";
-// import HomeView from '@/component/HomeView.vue'
-// //import AboutView from "@/views/AboutView.vue";
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "@/components/HomeView"
+import TourPackage from "@/components/TourPackage";
 
-// const routes = [
-//   { path: "/", name: "Home", component: HomeView },
-//   //{ path: "/about", name: "About", component: AboutView },
-// ];
+const routes = [
+  { path: "/", 
+    name: "Home",
+     component: HomeView
+     },
 
-// const router = createRouter({
-//   history: createWebHistory(),
-//   routes,
-// });
+  { path: "/tourpack", name: "Tourpackage", component: TourPackage },
+];
 
+const router = createRouter({
+  history: createWebHistory(process.env.Base_URL),
+  routes,
+});
 
-// export default router;
+export default router;
